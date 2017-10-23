@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>cube</title>
     <style>
         @keyframes rotateCube {
             0% {
-                transform: rotate(0deg);
+                transform: rotate(0deg) ;
             }
             100% {
                 transform: rotate(360deg);
@@ -14,22 +14,24 @@
         }
 
         .container {
-            width: 400px;
-            height: 400px;
+            width: 30em;
+            height: 30em;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50% ,-50%);
             /*background: #ddd;*/
+            text-align:center;
         }
 
         .cube {
+            margin-top: -2.5em;
+            margin-left: -2.5em;
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50% ,-50%);
-            width: 50px;
-            height: 50px;
+            width: 5em;
+            height: 5em;
             background: #ccf;
             animation: rotateCube 1s infinite normal;
         }
